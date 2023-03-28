@@ -12,63 +12,64 @@
 
 <body>
     <!-- Modal -->
-    <div class="modal is-hidden" data-modal>
-        <div class="inner-div">
-            <button class="modal-close-button-position" data-modal-close>
-                <svg class="modal-close-button">
+
+    <div class="modal is-hidden" data-modal> <!--class="modal is-hidden"-->
+        <div class="modal__div"> <!--class="inner-div"-->
+            <button class="modal__close-button-position" data-modal-close> <!--class="modal-close-button-position"-->
+                <svg class="modal__close-button"> <!--class="modal-close-button"-->
                     <use href="images/icons-svg.svg#icon-Vector-2"></use>
                 </svg>
             </button>
-            <div class="modal-elements">
-                <h3 class="modal-title">Leave your information and we'll call you back </h3>
-                <form name="modal-contact-form" class="modal-contact-form">
-                    <label class="modal-form-item">
-                        <p class="modal-text">Name</p>
-                        <input class="modal-input-dimensions" name="name" type="text" required>
-                        <svg class="modal-svg-contact">
+            <div class="modal__elements"> <!--class="modal-elements"-->
+                <h3 class="modal__title">Leave your information and we'll call you back </h3> <!--class="modal-title"-->
+                <form name="modal__contact-form" class="modal__contact-form"> <!--class="modal-contact-form"-->
+                    <label class="modal__form-item"> <!--class="modal-form-item"-->
+                        <p class="modal__text">Name</p> <!--class="modal-text"-->
+                        <input class="modal__input-dimensions" name="name" type="text" required> <!--class="modal-input-dimensions"-->
+                        <svg class="modal__svg-contact"> <!--class="modal is-hidden"--> <!--class="modal-svg-contact"-->
                             <use href="images/icons-svg.svg#icon-person-black"></use>
                         </svg>
                     </label>
-                    <label class="modal-form-item">
-                        <p class="modal-text">Telephone</p>
-                        <svg class="modal-svg-telephone">
+                    <label class="modal__form-item"> <!--class="modal-form-item"-->
+                        <p class="modal__text">Telephone</p> <!--class="modal-text"-->
+                        <svg class="modal__svg-telephone"> <!--class="modal-svg-telephone"-->
                             <use href="images/icons-svg.svg#icon-phone-black"></use>
                         </svg>
-                        <input name="Telephone" type="tel" class="modal-input-dimensions" required>
+                        <input name="Telephone" type="tel" class="modal__input-dimensions" required> <!--class="modal-input-dimensions"-->
                     </label>
-                    <label class="modal-form-item">
-                        <p class="modal-text">E-mail</p>
-                        <svg class="modal-svg-email">
+                    <label class="modal__form-item">
+                        <p class="modal__text">E-mail</p>
+                        <svg class="modal__svg-email">
                             <use href="images/icons-svg.svg#icon-email-black"></use>
                         </svg>
-                        <input name="E-mail" type="email" class="modal-input-dimensions" required>
+                        <input name="E-mail" type="email" class="modal__input-dimensions" required>
                     </label>
-                    <label class="modal-form-item">
-                        <p class="modal-text">Comments</p>
-                        <textarea class="modal-textarea" name="Comments" placeholder="Enter the text" cols="10"
-                            rows="10"></textarea>
+                    <label class="modal__form-item">
+                        <p class="modal__text">Comments</p>
+                        <textarea class="modal__textarea" name="Comments" placeholder="Enter the text" cols="10"
+                            rows="10"></textarea> <!--class="modal-textarea"-->
                     </label>
-                    <label class="modal-form-item modal-terms">
+                    <label class="modal__form-item modal--terms"> <!--class="modal-form-item modal-terms"-->
                         <input type="checkbox" name="Terms and Conditions" value="Terms and Conditions" unchecked required />
-                        <span class="modal-replace-checkbox">
-                            <svg class="modal-terms-svg">
+                        <span class="modal__replace-checkbox">  <!--class="modal-replace-checkbox"-->
+                            <svg class="modal__terms-svg">  <!--class="modal-terms-svg"-->
                                 <use href="images/icons-svg.svg#icon-check-mark"></use>
                             </svg>
                         </span>
-                        <p class="modal-text-terms">I agree with the letter and accept the
+                        <p class="modal__text-terms">I agree with the letter and accept the
                             <a href="#">
-                                <span class="span-for-link-modal"> Terms and Conditions</span>
-                        </p>
+                                <span class="modal__span-terms"> Terms and Conditions</span> <!--class="span-for-link-modal"-->
+                        </p> <!--class="modal-text-terms"-->
                         </a>
                     </label>
-                    <button type="submit" class="button-submit-modal">Send</button>
+                    <button type="submit" class="modal__button-submit">Send</button> <!--class="button-submit-modal"-->
                 </form>
             </div>
         </div>
     </div>
     <!--HeaderSection-->
     <div class="header--border"> <!-- class="header-border" -->
-        <section class="section">
+        <section class="section section--header">
             <div class="container">
                 <header class="section__page--header"> <!-- class="page-header container-for-dimensions" -->
                     <a class="section__header--logo" href="index.html"> <!-- class="link header-logo" -->
@@ -111,10 +112,13 @@
         </section>
     </div>
     <main>
-        <section class="studio-height studio-height-background-image">  <!-- class="studio-height studio-height-background-image" -->
-            <h1 class="first-studio-page-text">EFFECTIVE SOLUTIONS FOR<br> YOUR BUSINESS</h1> <!-- class="first-studio-page-text" -->
-            <button data-modal-open class="button-studio" type="button">Request our service</button> <!-- class="button-studio" -->
+
+        <section class="studio-height">  <!-- class="studio-height studio-height-background-image" -->
+            <h1 class="studio-height__title">EFFECTIVE SOLUTIONS FOR<br> YOUR BUSINESS</h1> <!-- class="first-studio-page-text" -->
+            <button data-modal-open class="studio-height__button" type="button">Request our service</button> <!-- class="button-studio" -->
         </section>
+
+
         <!--Features-Section-->
         <section class="section"> <!-- class="container-for-dimensions" -->
             <div class="container">
@@ -268,27 +272,35 @@
                                 <p class="member__occupation">Frontend Developer</p>
                             </div>
                             <div class="social-media-grid">
-                                <ul class="social-media-grid__list unstyled-list">
-                                    <li class="social-media-grid__item"> <a class="" href="#">
-                                            <svg class="social-media-grid__icons-svg">
+                                <ul class="social-media-grid__list unstyled-list"> <!--class="unstyled-list"-->
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#"> <!--class="icon-list-item"-->
+                                            <svg class="social-media-grid__icons-svg"> <!--class="social-media-icons-svg"-->
                                                 <use href="images/icons-svg.svg#icon-instagram-2-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-twitter-1-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-facebook-1-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-linkedin-1-1"></use>
                                             </svg>
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -301,27 +313,35 @@
                                 <p class="member__occupation">Marketing</p>
                             </div>
                             <div class="social-media-grid">
-                                <ul class="social-media-grid__list unstyled-list">
-                                    <li class="social-media-grid__item"> <a class="" href="#">
-                                            <svg class="social-media-grid__icons-svg">
+                                <ul class="social-media-grid__list unstyled-list"> <!--class="unstyled-list"-->
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#"> <!--class="icon-list-item"-->
+                                            <svg class="social-media-grid__icons-svg"> <!--class="social-media-icons-svg"-->
                                                 <use href="images/icons-svg.svg#icon-instagram-2-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-twitter-1-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-facebook-1-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-linkedin-1-1"></use>
                                             </svg>
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -334,27 +354,35 @@
                                 <p class="member__occupation">UI Designer</p>
                             </div>
                             <div class="social-media-grid">
-                                <ul class="social-media-grid__list unstyled-list">
-                                    <li class="social-media-grid__item"> <a class="" href="#">
-                                            <svg class="social-media-grid__icons-svg">
+                                <ul class="social-media-grid__list unstyled-list"> <!--class="unstyled-list"-->
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#"> <!--class="icon-list-item"-->
+                                            <svg class="social-media-grid__icons-svg"> <!--class="social-media-icons-svg"-->
                                                 <use href="images/icons-svg.svg#icon-instagram-2-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-twitter-1-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-facebook-1-1"></use>
                                             </svg>
-                                        </a></li>
-                                    <li class=""> <a class="icon-list-item" href="#">
+                                        </a>
+                                    </li>
+                                    <li class="social-media-grid__item">
+                                        <a class="" href="#">
                                             <svg class="social-media-icons-svg">
                                                 <use href="images/icons-svg.svg#icon-linkedin-1-1"></use>
                                             </svg>
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -433,57 +461,63 @@
     </main>
 
     <!--PageFooter-->
-    <footer class="page-footer">
-        <div class="footer-style container-for-dimensions">
-            <div class="footer-logo-container">
-            <section class="footer-section">
-                <a class="footer-logo link" href="index.html"><span class="span-for-logo">Web</span>Studio</a>
-                <address>
-                    <ul class="informations-of-contact unstyled-list">
-                        <li><a class="link location" href="">695 Park Ave, NY 10065, USA</a></li>
-                        <li><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="link contacts mail" href="tel:+12127724150">+1 212-772-4150</a></li>
-                    </ul>
-                </address>
-            </section>
-            </div>
-            <section class="find-us-section">
-                <p class="find-us-text">Find us on:</p>
-                <div class="social-icons">
-                    <div class="social-media-icons">
-                        <ul class="icon-list-footer unstyled-list">
-                            <li class="icon-list-item-footer"> <a href="#">
-                                    <svg width="20px" height="20px">
-                                        <use href="images/icons-svg.svg#icon-instagram-2-2"></use>
-                                    </svg></a></li>
-                            <li class="icon-list-item-footer"> <a href="#">
-                                    <svg width="20px" height="20px">
-                                        <use href="images/icons-svg.svg#icon-twitter-1-2"></use>
-                                    </svg></a></li>
-                            <li class="icon-list-item-footer"> <a href="#">
-                                    <svg width="20px" height="20px">
-                                        <use href="images/icons-svg.svg#icon-facebook-1-2"></use>
-                                    </svg></a></li>
-                            <li class="icon-list-item-footer"> <a href="#">
-                                    <svg width="20px" height="20px">
-                                        <use href="images/icons-svg.svg#icon-linkedin-1-2"></use>
-                                    </svg></a></li>
-                        </ul>
+    <footer class="page-footer"> <!--class="page-footer"-->
+        <section class="section section--footer">
+            <div class="container">
+                <div class="section__footer-style"> <!--class="footer-style container-for-dimensions"-->
+                    <div class="section__footer-logo-container"> <!--class="footer-logo-container"-->
+                        <section class=""> <!--class="footer-section"-->
+                            <a class="section__footer-logo link" href="index.html"> <!--class="footer-logo link"-->
+                                <span class="section__span-logo">Web</span>Studio</a> <!--class="span-for-logo"-->
+                            <address>
+                                <ul class="section__informations-of-contact unstyled-list"> <!--class="informations-of-contact unstyled-list"-->
+                                    <li><a class="section__location link " href="">695 Park Ave, NY 10065, USA</a></li> <!--class="link location"-->
+                                    <li><a class="section__contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li> <!--class="link contacts"-->
+                                    <li><a class="section__contacts mail link" href="tel:+12127724150">+1 212-772-4150</a></li> <!--class="link contacts mail"-->
+                                    
+                                </ul>
+                            </address>
+                        </section>
                     </div>
+                    <section class="section__find-us-section"> <!--class="find-us-section"-->
+                        <p class="section__find-us-text">Find us on:</p> <!--class="find-us-text"-->
+                        <div class="section__social-icons"> <!--class="social-icons"-->
+                            <div class="section__social-media-icons"> <!--class="social-media-icons"-->
+                                <ul class="section__icon-list-footer unstyled-list"> <!--class="icon-list-footer"-->
+                                    <li class="section__icon-list-item-footer"> <a href="#"> <!--class="icon-list-item-footer"-->
+                                            <svg width="20px" height="20px">
+                                                <use href="images/icons-svg.svg#icon-instagram-2-2"></use>
+                                            </svg></a></li>
+                                    <li class="section__icon-list-item-footer"> <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use href="images/icons-svg.svg#icon-twitter-1-2"></use>
+                                            </svg></a></li>
+                                    <li class="section__icon-list-item-footer"> <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use href="images/icons-svg.svg#icon-facebook-1-2"></use>
+                                            </svg></a></li>
+                                    <li class="section__icon-list-item-footer"> <a href="#">
+                                            <svg width="20px" height="20px">
+                                                <use href="images/icons-svg.svg#icon-linkedin-1-2"></use>
+                                            </svg></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section__newsletter"> <!--class="newsletter"-->
+                        <h2 class="section__subscribe-footer">Subscribe to the newsletter</h2> <!--class="subscribe-footer"-->
+                        <form name="email" class="email-footer"> 
+                            <input type="email" placeholder="Email" name="Email" required>
+                            <button class="section__footer-subscribe-button" type="submit">Subscribe <!--class="footer-subscribe-button"-->
+                                <svg class="section__subscribe-svg"> <!--class="subscribe-svg"-->
+                                    <use href="images/icons-svg.svg#icon-send"></use>
+                                </svg></a></li>
+                            </button>
+                        </form>
+                    </section>
                 </div>
-            </section>
-            <section class="newsletter">
-                <h2 class="subscribe-footer">Subscribe to the newsletter</h2>
-                <form name="email" class="email-footer">
-                    <input type="email" placeholder="Email" name="Email" required>
-                    <button class="footer-subscribe-button" type="submit">Subscribe
-                        <svg class="subscribe-svg">
-                            <use href="images/icons-svg.svg#icon-send"></use>
-                        </svg></a></li> 
-                    </button>
-                </form>
-            </section>
-        </div>
+            </div>
+        </section>
     </footer>
     <script src="./js/modal.js"></script>
 </body>

@@ -1,10 +1,25 @@
 @import"../utils/vars" ;
 
-$color_2: #2196F3;
-$color_3: #757575;
-$color_5: rgba(117, 117, 117, 0.5);
-$color_4: #FFFFFF;
-$border-color_2: #2196F3;
+
+.modal {
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(0,1);
+	pointer-events: none;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal__span-terms {
 	color: $color_2;
@@ -81,7 +96,7 @@ $border-color_2: #2196F3;
 	input[type="checkbox"] {
 		&:checked+.modal__replace-checkbox {
 			background: #2196F3;
-			border-color: $border-color_2;
+			border-color: $border-color_1;
 			svg {
 				opacity: 1;
 			}

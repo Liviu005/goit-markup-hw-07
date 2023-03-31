@@ -1,4 +1,5 @@
 @import"../utils/vars" ;
+@import"../base/base" ;
 
 .page-footer {
 	background: #2F303A;
@@ -150,3 +151,39 @@ ul.section__informations-of-contact {
 	fill: #fff;
 	padding-left: 25px;
 }
+
+.email-footer {
+	position: relative;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.03em;
+	color: $color_7;
+	width: 358px;
+	height: 50px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	input[type="email"] {
+		width: inherit;
+		height: inherit;
+		background: transparent;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+		border-radius: 4px;
+	}
+	input {
+		&::placeholder {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+			letter-spacing: 0.03em;
+			color: $color_7;
+		}
+	}
+}
+

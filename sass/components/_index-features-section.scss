@@ -1,21 +1,21 @@
 @import"../utils/vars" ;
 
-.grid--feature-studio {
+.grid--feature {
 	flex-wrap: wrap;
 	padding: 0;
 	align-items: center;
 }
-.grid--feature-studio-1 {
+.grid--feature-1 {
 	flex-wrap: wrap;
 	padding: 0;
 	align-items: center;
 }
-.grid__feature-studio {
+.grid__feature {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.feature-studio-svg-container {
+.feature-svgcontainer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -38,7 +38,7 @@
 
 }
 
-.feature-studio-content {
+.feature-content {
 	height: 120px;
 	width: 270px;
 
